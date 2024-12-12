@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surfboard Startup</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700|Montserrat:400,700" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <a href="/" class="logo">Surfboard Startup</a>
+    <button class="hamburger-menu" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#boards">Boards</a></li>
+        <li><a href="#wsl">WSL</a></li>
+        <li><a href="#rankings">Rankings</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+  <video autoplay muted loop class="banner-video">
+    <source src="video/217581_small.mp4" type="video/mp4">
+    <!-- Texte alternatif si la vidéo ne se charge pas -->
+    Your browser does not support the video tag.
+  </video>
+  <div class="banner-content">
+    <h1>Welcome to Surfboard Startup</h1>
+    <h2>Find your perfect wave</h2>
+  </div>
+</section>
+
+
+
+    <section class="intro">
+      <h2>Discover the Perfect Surfboard</h2>
+      <p>We offer a variety of surfboards tailored for every experience level and style. Let us help you catch the perfect wave.</p>
+    </section>
+
+    <section id="boards" class="boards">
+      <div class="cards">
+        <div class="card">
+          <img src="images/shortboard-carver.png" alt="Shortboard">
+          <h3>Shortboard</h3>
+          <p>Shortboards are designed for high performance surfing. They are shorter in length, have a pointed nose, and typically come with three fins.</p>
+        </div>
+        <div class="card">
+          <img src="images/PRISM-Longboard-10-2500pix-1.png" alt="Longboard">
+          <h3>Longboard</h3>
+          <p>Longboards are ideal for beginners and small waves. They are longer, more stable, and easier to paddle compared to shortboards.</p>
+        </div>
+        <div class="card">
+          <img src="images/planche-de-surf-torq-funboard-pinline-colour.webp" alt="Funboard">
+          <h3>Funboard</h3>
+          <p>Funboards offer a mix between a shortboard and a longboard, providing a balance of maneuverability and stability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="wsl" class="wsl">
+      <h2>World Surf League</h2>
+      <a href="https://www.worldsurfleague.com" class="btn btn-secondary" target="_blank">Visit WSL</a>
+      <div class="latest-results">
+        <!-- Dynamic results from WSL API -->
+      </div>
+    </section>
+
+    <section id="rankings" class="rankings">
+      <h2>Top Surfers</h2>
+      <div class="surfer-rankings">
+        <!-- Dynamic surfer rankings -->
+      </div>
+    </section>
+  <section id="rankings" class="rankings">
+  <div class="surfer">
+    <div class="avatar">
+      <img src="images/jhon.png" alt="Jhon Jhon Florence">
+    </div>
+    <h3>Jhon Jhon Florence</h3>
+  </div>
+  <div class="surfer">
+    <div class="avatar">
+      <img src="images/italo.png" alt="Italo Ferreira">
+    </div>
+    <h3>Italo Ferreira</h3>
+  </div>
+  <div class="surfer">
+    <div class="avatar">
+      <img src="images/griffincolapinto.png" alt="Griffin Colapinto">
+    </div>
+    <h3>Griffin Colapinto</h3>
+  </div>
+</section>
+<section id="blog" class="blog">
+      <h2>Surfing Blog</h2>
+      <div class="blog-posts">
+        <article class="blog-post">
+          <h3>How to Choose the Right Surfboard</h3>
+          <p>Learn the key factors in selecting a surfboard that suits your needs.</p>
+          <a href="#" class="btn btn-secondary">Read More</a>
+        </article>
+        <article class="blog-post">
+          <h3>Top Surfing Destinations for 2024</h3>
+          <p>Discover the best spots to catch waves around the world.</p>
+          <a href="#" class="btn btn-secondary">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Surfboard Startup | Designed with passion for surfers.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
